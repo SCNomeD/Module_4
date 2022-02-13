@@ -6,12 +6,13 @@ namespace Module_4
 	{
 		static void Main(string[] args)
 		{
-            Console.WriteLine("Цикл while");
-            int k = 0;
+            Console.WriteLine("Цикл do while");
 
-            while (k < 3)
+            int t = 0;
+
+            do
             {
-                Console.WriteLine(k);
+                Console.WriteLine(t);
 
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
                 switch (Console.ReadLine())
@@ -45,8 +46,10 @@ namespace Module_4
                         break;
                 }
 
-                k++;
+                t++;
             }
+
+            while (t > 0);
 
             Console.ReadKey();
         }
