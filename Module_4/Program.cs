@@ -30,7 +30,7 @@ namespace Module_4
 				Console.BackgroundColor = ConsoleColor.Cyan;
 				Console.ForegroundColor = ConsoleColor.Black;
 
-				Console.WriteLine("Your color is green!");
+				Console.WriteLine("Your color is cyan!");
 				break;
 
 			default:
