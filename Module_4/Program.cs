@@ -9,12 +9,20 @@ namespace Module_4
             Console.WriteLine("Цикл while");
             int k = 0;
 
-            while (k < 1)
+            while (true)
             {
+                Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
                 Console.WriteLine(k);
 
-                Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                switch (Console.ReadLine())
+                var text = Console.ReadLine();
+
+                if (text == "stop")
+                {
+                    Console.WriteLine("Цикл остановлен");
+                    break;
+                }
+
+                switch (text)
                 {
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
@@ -52,10 +60,18 @@ namespace Module_4
 
             do
             {
-                Console.WriteLine(t);
-
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                switch (Console.ReadLine())
+                Console.WriteLine(k);
+
+                var text = Console.ReadLine();
+
+                if (text == "stop")
+                {
+                    Console.WriteLine("Цикл остановлен");
+                    break;
+                }
+
+                switch (text)
                 {
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
@@ -87,7 +103,7 @@ namespace Module_4
                 }
                 t++;
             }
-            while (t < 1);
+            while (true);
 
             Console.ReadKey();
         }
