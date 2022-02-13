@@ -6,9 +6,14 @@ namespace Module_4
 	{
 		static void Main(string[] args)
 		{
-            for (int i = 1; i < 5; i++)
+            Console.WriteLine("Цикл while");
+            int k = 0;
+
+            while (k < 3)
             {
-                Console.WriteLine("Iteration {0}", i);
+                Console.WriteLine(k);
+
+                Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
                 switch (Console.ReadLine())
                 {
                     case "red":
@@ -31,6 +36,7 @@ namespace Module_4
 
                         Console.WriteLine("Your color is cyan!");
                         break;
+
                     default:
                         Console.BackgroundColor = ConsoleColor.Yellow;
                         Console.ForegroundColor = ConsoleColor.Black;
@@ -38,6 +44,8 @@ namespace Module_4
                         Console.WriteLine("Your color is yellow!");
                         break;
                 }
+
+                k++;
             }
 
             Console.ReadKey();
