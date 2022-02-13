@@ -46,11 +46,7 @@ namespace Module_4
                         break;
 
                     default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is yellow!");
-                        break;
+                        continue;
                 }
                 k++;
             }
@@ -95,11 +91,7 @@ namespace Module_4
                         break;
 
                     default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is yellow!");
-                        break;
+                        continue;
                 }
                 t++;
             }
