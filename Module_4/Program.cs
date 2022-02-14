@@ -57,7 +57,7 @@ namespace Module_4
             do
             {
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                Console.WriteLine(k);
+                Console.WriteLine(t);
 
                 var text = Console.ReadLine();
 
