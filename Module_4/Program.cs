@@ -37,31 +37,47 @@ namespace Module_4
 
             //Console.ReadKey();
 
-            int[][] array = new int[3][];
+            //Третий
+            //int[][] array = new int[3][];
 
-            array[0] = new int[2] { 1, 2 };
-            array[1] = new int[3] { 1, 2, 3 };
-            array[2] = new int[5] { 1, 2, 3, 4, 5 };
+            //array[0] = new int[2] { 1, 2 };
+            //array[1] = new int[3] { 1, 2, 3 };
+            //array[2] = new int[5] { 1, 2, 3, 4, 5 };
 
-            foreach (var num in array)
+            //foreach (var num in array)
+            //{
+            //    foreach (var item in num)
+            //    {
+            //        Console.Write(item + " ");
+            //    }
+            //}
+
+            //Четвертый
+            //int[] array_2 = { -1, -2, 4, 8, -5 };
+
+            //int sum = 0;
+
+            //for (int i = 0; i < array_2.Length; i++)
+            //{
+            //    if (array_2[i] > 0)
+            //        sum += array_2[i];
+            //}
+
+            //Console.WriteLine(sum);
+
+            //Пятый
+            int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+
+            int temp = 0;
+
+            for (int i = 0; i < arr.GetUpperBound(0) + 1; i++)
             {
-                foreach (var item in num)
-                {
-                    Console.Write(item + " ");
-                }
+                for (int j = 0; j < arr.GetUpperBound(1) + 1; j++)
+                    if (arr[i, j] > 0)
+                        temp += arr[i, j];
             }
 
-            int[] array_2 = { -1, -2, 4, 8, -5 };
-
-            int sum = 0;
-
-            for (int i = 0; i < array_2.Length; i++)
-            {
-                if (array_2[i] > 0)
-                    sum += array_2[i];
-            }
-
-            Console.WriteLine(sum);
+            Console.WriteLine(temp);
         }
     }
 }
