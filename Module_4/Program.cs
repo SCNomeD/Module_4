@@ -6,98 +6,16 @@ namespace Module_4
 	{
 		static void Main(string[] args)
 		{
-            Console.WriteLine("Цикл while");
-            int k = 0;
+			Console.WriteLine("Введите своё имя");
 
-            while (true)
+			var name = Console.ReadLine();
+
+			for (int i = name.Length - 1; i >=0; i--)
             {
-                Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                Console.WriteLine(k);
-
-                var text = Console.ReadLine();
-
-                if (text == "stop")
-                {
-                    Console.WriteLine("Цикл остановлен");
-                    break;
-                }
-
-                switch (text)
-                {
-                    case "red":
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is red!");
-                        break;
-
-                    case "green":
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is green!");
-                        break;
-
-                    case "cyan":
-                        Console.BackgroundColor = ConsoleColor.Cyan;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is cyan!");
-                        break;
-
-                    default:
-                        continue;
-                }
-                k++;
+                Console.WriteLine(name[i]);
             }
 
-            Console.WriteLine("Цикл do while");
-            int t = 0;
-
-            do
-            {
-                Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                Console.WriteLine(t);
-
-                var text = Console.ReadLine();
-
-                if (text == "stop")
-                {
-                    Console.WriteLine("Цикл остановлен");
-                    break;
-                }
-
-                switch (text)
-                {
-                    case "red":
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is red!");
-                        break;
-
-                    case "green":
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is green!");
-                        break;
-
-                    case "cyan":
-                        Console.BackgroundColor = ConsoleColor.Cyan;
-                        Console.ForegroundColor = ConsoleColor.Black;
-
-                        Console.WriteLine("Your color is cyan!");
-                        break;
-
-                    default:
-                        continue;
-                }
-                t++;
-            }
-            while (true);
-
-            Console.ReadKey();
-        }
+			Console.ReadKey();
+		}
     }
 }
