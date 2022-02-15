@@ -66,18 +66,39 @@ namespace Module_4
             //Console.WriteLine(sum);
 
             //Пятый
+            //int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+
+            //int temp = 0;
+
+            //for (int i = 0; i < arr.GetUpperBound(0) + 1; i++)
+            //{
+            //    for (int j = 0; j < arr.GetUpperBound(1) + 1; j++)
+            //        if (arr[i, j] > 0)
+            //            temp += arr[i, j];
+            //}
+
+            //Console.WriteLine(temp);
+
             int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
 
-            int temp = 0;
+            int temp;
 
-            for (int i = 0; i < arr.GetUpperBound(0) + 1; i++)
+            for (int i = 0; i <= arr.GetUpperBound(0); i++)
             {
-                for (int j = 0; j < arr.GetUpperBound(1) + 1; j++)
-                    if (arr[i, j] > 0)
-                        temp += arr[i, j];
+                for (int j = 0; j <= arr.GetUpperBound(1); j++)
+                    for (int k = j+1; k <= arr.GetUpperBound(1); k++)
+                        if (arr[i,j] > arr [i, k])
+                        {
+                            temp = arr[i, k];
+                            arr[i,k] = arr[i, j];
+                            arr[i,j] = temp;
+                        }
             }
 
-            Console.WriteLine(temp);
+            foreach (var item in arr)
+            {
+                Console.Write(item);
+            }
         }
     }
 }
