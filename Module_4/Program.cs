@@ -163,15 +163,23 @@ namespace Module_4
             //Console.WriteLine(sum);
 
             //Кортежи
-            (string name, int age) anketa;
+            (string Name, string Type, double Age, int NameCount) Pet;
 
-            Console.Write("Введите имя: ");
-            anketa.name = Console.ReadLine();
-            Console.Write("Введите возраст цифрами: ");
-            anketa.age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите имя питомца: ");
+            Pet.Item1 = Console.ReadLine();
 
-            Console.WriteLine("Ваше имя: {0}", anketa.Item1);
-            Console.WriteLine("Ваш возраст: {0}", anketa.Item2);
+            Console.Write("Введите тип питомца (собака, кошка и т.д.): ");
+            Pet.Item2 = Console.ReadLine();
+
+            Console.Write("Введите возраст питомца: ");
+            Pet.Item3 = double.Parse(Console.ReadLine());
+
+            Pet.Item4 = Pet.Item1.Length;
+
+            Console.WriteLine("Вашего питомца зовут: {0}", Pet.Item1);
+            Console.WriteLine("Тип Вашего питомца: {0}", Pet.Item2);
+            Console.WriteLine("Возраст Вашего питомца: {0}", Pet.Item3);
+            Console.WriteLine("Длина имени Вашего питомца: {0}", Pet.Item4);
 
             Console.ReadKey();
         }
