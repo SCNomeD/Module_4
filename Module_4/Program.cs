@@ -79,6 +79,7 @@ namespace Module_4
 
             //Console.WriteLine(temp);
 
+            //Шестой
             //int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
 
             //int temp;
@@ -100,6 +101,7 @@ namespace Module_4
             //    Console.Write(item);
             //}
 
+            //Повтор
             //int[,] array = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 } };
 
             //Console.Write("Количество строк: ");
@@ -127,38 +129,38 @@ namespace Module_4
             //}
 
 
-            var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+            //var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
 
-            int temp;
+            //int temp;
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                for (int j = i + 1; j < arr.Length; j++)
-                {
-                    if (arr[i] > arr[j])
-                    {
-                        temp = arr[i];
-                        arr[i] = arr[j];
-                        arr[j] = temp;
-                    }
-                }
-            }
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    for (int j = i + 1; j < arr.Length; j++)
+            //    {
+            //        if (arr[i] > arr[j])
+            //        {
+            //            temp = arr[i];
+            //            arr[i] = arr[j];
+            //            arr[j] = temp;
+            //        }
+            //    }
+            //}
 
-            foreach (var item in arr)
-            {
-                Console.Write(item);
-            }
+            //foreach (var item in arr)
+            //{
+            //    Console.Write(item);
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            int sum = 0;
+            //int sum = 0;
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                sum += arr[i];
-            }
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    sum += arr[i];
+            //}
 
-            Console.WriteLine(sum);
+            //Console.WriteLine(sum);
 
             Console.ReadKey();
         }
