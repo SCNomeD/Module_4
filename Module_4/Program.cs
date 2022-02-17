@@ -162,6 +162,17 @@ namespace Module_4
 
             //Console.WriteLine(sum);
 
+            //Кортежи
+            (string name, int age) anketa;
+
+            Console.Write("Введите имя: ");
+            anketa.name = Console.ReadLine();
+            Console.Write("Введите возраст цифрами: ");
+            anketa.age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ваше имя: {0}", anketa.Item1);
+            Console.WriteLine("Ваш возраст: {0}", anketa.Item2);
+
             Console.ReadKey();
         }
     }
